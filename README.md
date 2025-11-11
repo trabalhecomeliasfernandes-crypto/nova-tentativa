@@ -1,11 +1,21 @@
-<div align="center">
+# Rescore Sales Dashboard
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A modern, futuristic sales dashboard to track and analyze performance metrics for multiple salespeople, with AI-powered insights.
 
-  <h1>Built with AI Studio</h2>
+## Development
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+To get started with development:
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1.  Install dependencies:
+    `npm install`
+2.  Start the development server:
+    `npm run dev`
 
-</div>
+## Build for Production
+
+To create a production-ready build:
+
+1.  Run the build command:
+    `npm run build`
+
+This will create a `dist` folder with the static files ready for deployment on services like Netlify, Vercel, or Hostinger.

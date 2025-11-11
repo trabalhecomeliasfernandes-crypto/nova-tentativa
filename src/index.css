@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+.prose {
+  max-width: none;
+}
+.prose {
+  color: #d1d5db; /* gray-300 */
+}
+.prose h1, .prose h2, .prose h3, .prose h4, .prose strong {
+    color: #ffffff; /* white */
+}
+.prose a {
+    color: #93c5fd; /* blue-300 */
+}
+.prose ul > li::before {
+    background-color: #60a5fa; /* blue-400 */
+}
+ /* For custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a202c; /* bg-gray-800 */
+}
+::-webkit-scrollbar-thumb {
+  background: #4a5568; /* bg-gray-600 */
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #718096; /* bg-gray-500 */
+}
+/* Ticker animation fix */
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Animate to half the width because content is duplicated */
+  }
+}
+.ticker-track {
+  animation: ticker-scroll 40s linear infinite;
+}
+/* Ranking Card Glow Animation */
+@keyframes pulse-glow-blue {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.4), 0 0 5px rgba(59, 130, 246, 0.6) inset;
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.6), 0 0 8px rgba(59, 130, 246, 0.8) inset;
+  }
+}
+@keyframes pulse-glow-gray {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(107, 114, 128, 0.3), 0 0 5px rgba(107, 114, 128, 0.5) inset;
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(107, 114, 128, 0.4), 0 0 8px rgba(107, 114, 128, 0.6) inset;
+  }
+}
+.pulse-glow-blue {
+  animation: pulse-glow-blue 3s ease-in-out infinite;
+}
